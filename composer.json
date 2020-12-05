@@ -1,0 +1,13 @@
+{
+    "name": "militska/SBAcquiringApi",
+
+    "require": {
+        "monolog/monolog": "^2.1",
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "militska\\SBAcquiringApi\\": "src/"
+        }
+    }
+}
