@@ -97,7 +97,7 @@ class AcquiringApi
     public function create(RegisterRequest $request): RegisterResponse
     {
         $url = $this->configuration->baseUrl . Url::REGISTER;
-        $postParams = array_merge($request->getAttributes(), $this->getAuthParams());
+        $postParams = array_merge(var_export($request, true), $this->getAuthParams());
 
         $this->logger->log(
             Logger::INFO,
