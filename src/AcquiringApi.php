@@ -84,7 +84,7 @@ class AcquiringApi
             "SBAcquiringApi.getOrderExtendStatus() params from sberbank; " .
             "orderId={$orderId};" .
             "url={$url};" .
-            "params"
+            "params". var_export($responseSource, true)
         );
 
         return (new PaymentResponse($responseSource));
