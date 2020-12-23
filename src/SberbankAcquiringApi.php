@@ -17,7 +17,7 @@ use Monolog\Logger;
  * Class AcquiringApi
  * @see https://securepayments.sberbank.ru/wiki/doku.php/integration:api:rest:start
  */
-class AcquiringApi
+class SberbankAcquiringApi
 {
     /** @var int таймаут для запросов по умолчанию */
     const DEFAULT_TIMEOUT = 10;

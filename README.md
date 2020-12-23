@@ -1,11 +1,9 @@
-<?php
+### Rest клиент для эквайинга сбербанка
 
-use militska\SBAcquiringApi\src\Configuration;
-use militska\acq\src\AcquiringApi;
-use militska\acq\src\requests\RegisterRequest;
+Простой клиент для апи, и очень много логирования.
 
-include(__DIR__ . '/../vendor/autoload.php');
 
+```php
 $confFile = include __DIR__ . '/../src/config/config_test.php';
 $conf = new Configuration($confFile);
 $logger = new \Monolog\Logger('t');
@@ -18,4 +16,4 @@ $requestCreate->description = 'test';
 $api = new SberbankAcquiringApi($conf, $logger);
 
 $res = $api->create($requestCreate);
-var_export($conf);
+var_export($conf);`
